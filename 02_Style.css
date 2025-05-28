@@ -37,9 +37,10 @@ nav ul li a:hover {
 }
 
 /* Encabezado */
-header {
+.Encabezado{
     text-align: center;
-    padding: 12% 0;
+    
+    width: 90%;
 }
 
 #Perfil{
@@ -47,7 +48,8 @@ header {
     align-items: center;       /* centra verticalmente */
     justify-content: center;   /* centra horizontalmente dentro del header */
     gap: 1rem;                 /* espacio entre imagen y texto */
-    padding: 1rem;
+    padding: 25%  0;
+
 }
 
 #Perfil img{
@@ -71,15 +73,18 @@ body{
     background-color: black;
     color: #F7F7F7;
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
 
 .Fondo{
     background-color: #1F1F1F; 
 }
 
 .container {
-    margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
     background-color: #333333;
 }
 
@@ -91,8 +96,6 @@ h2{
     padding: 10px 0px 20px 0px;
 }
 
-
-
 .box_informacion{
     background-color: #1F1F1F;
     margin: 0px 5% 0px 2%;
@@ -102,3 +105,4 @@ h2{
     min-width: 35%;
     display: inline-block
 }
+
