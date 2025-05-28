@@ -1,48 +1,97 @@
-/*
-Comentario
-*/
-body{
-    background-color: black;
-}
+/* Comentario */
 
-#general{
+/* Estilo de la navegacion */
+#navegacion{
+    position: fixed;
+    top: 0;
+    width: 90%;
     background-color: #1F1F1F;
+    z-index: 1000;
+    padding: 0;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content:end;
+    flex-wrap: wrap;
+    padding-right: 10px;
+    gap: 20px;
+}
+
+nav ul li a{
     color: #F7F7F7;
-    min-width: 85%;
-    max-width: 90%;
+    font-size: 1rem
 }
 
-#Informacion {
-    margin: 10px -10px 5px -10px;
+nav ul:hover li a:not(:hover){
+    font-size: 0.95rem;
+}
+
+nav ul li a:hover {
+    color: #b7bcc0;
+    background-color: #eeeeee56;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 12% 0;
+}
+
+#Perfil{
+    display: flex;
+    align-items: center;       /* centra verticalmente */
+    justify-content: center;   /* centra horizontalmente dentro del header */
+    gap: 1rem;                 /* espacio entre imagen y texto */
+    padding: 1rem;
+}
+
+#Perfil img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;         /* aplica un borde redondeado */
+    border: 3px solid white;  /* aplica un borde blanco*/
+    object-fit: cover;          /* no deforma la imagen */
+    object-position: 95% 0%;    /* para acomodar la parte de la imagen a mostrar*/
+}
+
+#Perfil h1 h4{
+    margin: 0;
+    text-align: left;
+}
+
+/* Estilo en general */
+body{
+    font-family:"Montserrat",sans-serif;
+    font-weight: 300;
+    background-color: black;
+    color: #F7F7F7;
+    width: 90%;
+}
+
+.Fondo{
+    background-color: #1F1F1F; 
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
     background-color: #333333;
-    padding: 30px 10px 5px 10px;
 }
 
-#TituloSM{
+h2{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
     padding: 10px 0px 20px 0px;
-    text-align: center;
-}
-
-.Perfil{
-    border-radius: 40px;
-    width: 90px;
-}
-
-.Nombre, .Apellido{
-    display: inline;
-    margin: 0px 0px 0px 8px;
-}
-
-#Entrada h1, #Entrada h4 {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 
-.TituloSM{
-    text-align: center;
-}
 
 .box_informacion{
     background-color: #1F1F1F;
