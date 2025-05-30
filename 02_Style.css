@@ -2,12 +2,16 @@
 
 /* Estilo de la navegacion */
 #navegacion{
-    position: fixed;
-    top: 0;
-    width: 90%;
     background-color: #1F1F1F;
+    padding: 10px 0;
+    text-align: center;
+    width: 90%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     z-index: 1000;
-    padding: 0;
+    
 }
 
 nav ul{
@@ -38,9 +42,9 @@ nav ul li a:hover {
 }
 
 /* Encabezado */
-.Encabezado{
+#Encabezado{
     text-align: center;
-    width: 90%;
+    width: 100%;
 }
 
 #Perfil{
@@ -48,8 +52,11 @@ nav ul li a:hover {
     align-items: center;       /* centra verticalmente */
     justify-content: center;   /* centra horizontalmente dentro del header */
     gap: 1rem;                 /* espacio entre imagen y texto */
-    padding: 25%  0;
-
+    min-height: 250px;
+    width: 100%;               /* Alinea con el resto del contenido */
+    max-width: 1200px;
+    margin: 0 auto;            /* Centra el bloque */
+    padding: 20% 0 20% 0;
 }
 
 #Perfil img{
@@ -61,7 +68,7 @@ nav ul li a:hover {
     object-position: 95% 0%;    /* para acomodar la parte de la imagen a mostrar*/
 }
 
-#Perfil h1 h4{
+#Perfil h1, #Perfil h4{
     margin: 0;
     text-align: left;
 }
@@ -72,9 +79,8 @@ body{
     font-weight: 300;
     background-color: black;
     color: #F7F7F7;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .Fondo{
@@ -99,16 +105,6 @@ h2{
     color: rgb(167, 78, 78);
 }
 
-.box_informacion{
-    background-color: #1F1F1F;
-    margin: 0px 5% 0px 2%;
-    padding: 10px 10px 10px 10px;
-    width: 40%;
-    max-width: 45%;
-    min-width: 35%;
-    display: inline-block
-}
-
 img{
     max-width: 80%;
 }
@@ -126,16 +122,22 @@ a {
 
 }
 
+.box_informacion{
+    background-color: #1F1F1F;
+    margin: 0px 5% 0px 2%;
+    padding: 10px 10px 10px 10px;
+    width: 40%;
+    max-width: 45%;
+    min-width: 35%;
+    display: inline-block
+}
+
 .Box-grid img{
-    display: grid;
-    width: 60%;
-    max-width: 85%;
-    min-width: 40%;
+    width: 100%;
     height: 300px;
-    padding: 1rem 15% 1rem 15%;
-    align-items: center;
-    place-items: center;   
-    object-fit: cover;  
+    display: block;
+    object-fit: contain;
+    margin: 0 auto;
 }
 
 .Box{
