@@ -122,6 +122,20 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+    justify-content: center;
+
+}
+
+.Box-grid img{
+    display: grid;
+    width: 60%;
+    max-width: 85%;
+    min-width: 40%;
+    height: 300px;
+    padding: 1rem 15% 1rem 15%;
+    align-items: center;
+    place-items: center;   
+    object-fit: cover;  
 }
 
 .Box{
