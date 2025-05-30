@@ -30,8 +30,8 @@ nav ul:hover li a:not(:hover){
 }
 
 nav ul li a:hover {
-    color: #b7bcc0;
-    background-color: #eeeeee56;
+    color: #ffffff;
+    background-color: rgb(187, 47, 47);
     transform: scale(1.1);
     transition: all 0.3s ease;
     border-radius: 4px;
