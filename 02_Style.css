@@ -116,8 +116,6 @@ a {
 }
 
 /* formato secciones */
-
-
 .Box-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -170,8 +168,10 @@ a {
 }
 
 /* Pie */
-footer {
-    text-align: center;
+footer #container{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 .RRSS a {
@@ -179,6 +179,7 @@ footer {
     margin: 0 10px;
     font-size: 1.1rem;
 }
+
 .RRSS a:hover {
     text-decoration: underline;
     text-decoration-color: rgb(167, 78, 78)
@@ -188,7 +189,7 @@ footer {
 
 /* ------ responsive ------ */
 
-@media (min-width: 600px) {
+@media (max-width: 768px) {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -229,6 +230,17 @@ footer {
     background-color: #444;
     color: #fff;
     border-radius: 6px;
+    }
+
+    footer .RRSS {
+        text-align: center; /* centra horizontalmente si es necesario */
+        padding: 1.5rem 0;   /* espacio arriba y abajo del contenedor */
+    }
+
+    footer .RRSS{
+        display: inline-block;
+        margin: 0.5rem 1rem;  /* separación vertical y horizontal entre elementos */
+        text-decoration: none;
     }
 
 }
