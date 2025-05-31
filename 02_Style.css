@@ -260,6 +260,22 @@ footer{
         transition: background-color 0.3s;
     }
 
+    /* responsive perfil */
+    #Perfil {
+        flex-direction: column; /* apila imagen y texto */
+        padding: 10% 0;         /* reduce el padding vertical */
+    }
+
+    #Perfil img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;      /* mantiene el recorte sin deformar */
+        object-position: 95% 0%; /* centrado para mejor enfoque en móvil */
+    }
+
+    #Perfil h1, #Perfil h4 {
+        text-align: center;
+    }
 
     /* resto del responsive */
     .grid-container {
