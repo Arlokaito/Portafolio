@@ -237,7 +237,7 @@ footer #container{
         padding: 1.5rem 0;   /* espacio arriba y abajo del contenedor */
     }
 
-    footer .RRSS{
+    footer .RRSS a{
         display: inline-block;
         margin: 0.5rem 1rem;  /* separación vertical y horizontal entre elementos */
         text-decoration: none;
