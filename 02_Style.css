@@ -2,143 +2,141 @@
 
 /* Ocultar checkbox */
 #toggle-menu {
-    display: none;
+    display: none;  /* Se oculta el checkbox que controla el menú hamburguesa */
 }
 
 /* Estilo del botón de menú */
 .menu-icon {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 1rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #1a1a1a; /* Color oscuro similar al header */
-    color: white;
-    z-index: 1001;
+    display: none;      /* Oculto por defecto (visible solo en versión móvil) */
+    font-size: 2rem;    /* Tamaño del ícono */
+    cursor: pointer;    /* Cursor tipo puntero */
+    padding: 1rem;      /* Espaciado interno */
+    position: fixed;    /* Se mantiene fijo en pantalla */
+    top: 0;             /* Espacio superior */
+    left: 5%;           /* Espacio izquierdo */
+    background-color: #1a1a1a;  /* Color oscuro similar al header */
+    color: white;               /* Color del ícono */
+    z-index: 1001;                /* Prioridad sobre otros elementos */
 }
 
-/* Estilo de la navegacion */
+/* Estilo de barra navegacion */
 #navegacion{
-    background-color: #1F1F1F;
-    padding: 10px 0;
-    text-align: center;
-    width: 90%;
-    position: fixed;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    z-index: 1000;
+    background-color: #1F1F1F;    /* Color de fondo */
+    padding: 10px 0;                /* Espaciado arriba y abajo */
+    text-align: center;             /* Centra el contenido */
+    width: 90%;                     /* Ancho del nav */
+    position: fixed;                /* Fijo en pantalla */
+    margin: 0 auto;                 /* Centrado horizontal */
+    z-index: 1000;                  /* Prioridad sobre otros elementos */
     
 }
 
 nav ul{
-    list-style: none;
-    display: flex;
-    justify-content:end;
-    flex-wrap: wrap;
-    padding-right: 15px;
-    gap: 20px;          /* espacio entre texto */
+    list-style: none;           /* Sin viñetas para los items de la lista */
+    display: flex;              /* Elementos en línea */
+    justify-content:end;        /* Alineación al final */
+    flex-wrap: wrap;            /* Permite salto de línea */
+    padding-right: 15px;        /* Espacio a la derecha */
+    gap: 20px;                  /* espacio entre texto */
 }
 
 nav ul li a{
-    color: #F7F7F7;
-    display: block;
-    font-size: 1rem;
-    padding: 5px;
+    color: #F7F7F7;           /* Color de texto */
+    display: block;             /* Ocupa todo el área del enlace */
+    font-size: 1rem;            /* Tamaño de fuente */
+    padding: 5px;               /* Espaciado interno */
 }
 
 nav ul:hover li a:not(:hover){
-    font-size: 0.95rem;
+    font-size: 0.95rem;         /* Reduce ligeramente tamaño de los que no están en hover */
 }
 
 nav ul li a:hover {
-    color: #ffffff;
-    background-color: rgb(187, 47, 47);
-    transform: scale(1.1);
-    transition: all 0.3s ease;
-    border-radius: 4px;
+    color: #ffffff;                         /* Color al pasar el mouse */
+    background-color: rgb(187, 47, 47);     /* Fondo al pasar el mouse */
+    transform: scale(1.1);                    /* Ligeramente más grande */
+    transition: all 0.3s ease;                /* Transición suave */
+    border-radius: 4px;                       /* Bordes redondeados */
 }
 
 /* Encabezado */
 #Encabezado{
-    text-align: center;
+    text-align: center;         /* Centra contenido */
     width: 100%;
 }
 
 #Perfil{
-    display: flex;
-    align-items: center;       /* centra verticalmente */
-    justify-content: center;   /* centra horizontalmente dentro del header */
-    gap: 1rem;                 /* espacio entre imagen y texto */
+    display: flex;             /* Flexbox para alinear elementos */
+    align-items: center;       /* Centrado vertical */
+    justify-content: center;   /* Centrado horizontal */
+    gap: 1rem;                 /* Espacio entre imagen y texto */
     min-height: 250px;
-    width: 100%;               /* Alinea con el resto del contenido */
+    width: 100%;               /* Alineado con contenido */
     max-width: 1200px;
-    margin: 0 auto;            /* Centra el bloque */
-    padding: 20% 0 20% 0;
+    margin: 0 auto;            /* Centrado */
+    padding: 20% 0 20% 0;      /* Espacio arriba y abajo */
 }
 
 #Perfil img{
     width: 150px;
     height: 150px;
-    border-radius: 50%;         /* aplica un borde redondeado */
-    border: 3px solid white;  /* aplica un borde blanco*/
-    object-fit: cover;          /* no deforma la imagen */
-    object-position: 95% 0%;    /* para acomodar la parte de la imagen a mostrar*/
+    border-radius: 50%;         /* Aplica un borde redondeado */
+    border: 3px solid white;  /* Aplica un borde blanco*/
+    object-fit: cover;          /* No deforma la imagen */
+    object-position: 95% 0%;    /* Acomoda la parte de la imagen visible */
 }
 
 #Perfil h1, #Perfil h4{
     margin: 0;
-    text-align: left;
+    text-align: left;           /* Alineado a la izquierda */
 }
 
 /* Estilo en general */
 body{
-    font-family:"Montserrat",sans-serif;
-    font-weight: 300;
-    background-color: black;
-    color: #F7F7F7;
-    max-width: 90%;
-    margin: 0 auto;
+    font-family:"Montserrat",sans-serif;    /* Fuente del texto*/
+    font-weight: 300;                       /* Grosor de fuente del texto*/
+    background-color: black;              /* Fondo oscuro */
+    color: #F7F7F7;                       /* Texto claro */
+    max-width: 90%;                         /* Limita ancho */
+    margin: 0 auto;                         /* Centrado */
 }
 
 .Fondo{
-    background-color: #1F1F1F; 
+    background-color: #1F1F1F;            /* Fondo gris oscuro */     
 }
 
 .container {
-    padding: 10%;
-    background-color: #333333;
+    padding: 10%;                           /* Espaciado interno */
+    background-color: #333333;            /* Fondo más claro */
 }
 
 h2{
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 1.8rem;
-    padding: 10px 0px 20px 0px;
-    text-decoration: underline;
-    text-decoration-color: rgb(167, 78, 78);
+    text-align: center;                     /* Lineación del texto */
+    font-family: "Montserrat", sans-serif;  /* Fuente del texto*/
+    font-weight: 600;                       /* Grosor de fuente del texto*/
+    font-size: 1.8rem;                      /* Tamaño de fuente del texto*/
+    padding: 10px 0px 20px 0px;             /* Espaciado interno */
+    text-decoration: underline;             /* Decoración del subryado */
+    text-decoration-color: rgb(167, 78, 78); /* Color del subrayado */
 }
 
 .container h4, .container h3{
-    color: rgb(167, 78, 78);
+    color: rgb(167, 78, 78);        /* Títulos rojos */
 }
 
 img{
-    max-width: 80%;
+    max-width: 80%;                   /* No sobrepasa el contenedor */
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none;            /* Sin subrayado por defecto */
 }
 
 /* formato secciones */
 .Box-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));   /* Responsive grid */
+    gap: 20px;                      /* Espacio entre elementos */
     justify-content: center;
 
 }
@@ -150,21 +148,21 @@ a {
     width: 40%;
     max-width: 45%;
     min-width: 35%;
-    display: inline-block
+    display: inline-block       /* Para que fluyan horizontalmente */
 }
 
 .Box-grid img{
     width: 100%;
     height: 300px;
     display: block;
-    object-fit: contain;
+    object-fit: contain;        /* No recorta imagen */
     margin: 0 auto;
 }
 
 .Box{
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.664);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.664);  /* Sombra */
     padding: 0 1rem 01rem 1rem;
 }
 
@@ -176,14 +174,14 @@ a {
 
 .btn {
     display: inline-block;
-    background-color: rgb(187, 47, 47);
+    background-color: rgb(187, 47, 47); /* Botón rojo */
     color: white;
     padding: 8px 15px;
     border-radius: 3px;
 }
 
 .btn:hover{
-    background-color: rgb(119, 25, 25);
+    background-color: rgb(119, 25, 25); /* Más oscuro al pasar mouse */
 }
 
 /* Pie */
@@ -206,7 +204,7 @@ footer{
 
 .RRSS a:hover {
     text-decoration: underline;
-    text-decoration-color: rgb(167, 78, 78)
+    text-decoration-color: rgb(167, 78, 78); /* Subrayado rojo al pasar mouse */
 }
 
 
@@ -216,32 +214,34 @@ footer{
 @media (max-width: 768px) {
     /* Ocultar nav por defecto en móvil */
     nav {
-        display: none;
-        position: fixed;
+        display: none;                  /* Oculto por defecto */
+        position: fixed;                /* Se mantiene fijo en pantalla */     
         top: 0;
-        left: 0;
+        left: auto;
         width: 100%;
-        background-color: #1a1a1a; /* Misma base que header/nav original */
-        padding-top: 3.5rem; /* Espacio para no tapar el botón hamburguesa */
-        z-index: 1000;
+        background-color: #1a1a1a;   /* Misma base que header/nav original */
+        padding-top: 3.5rem;           /* Espacio para no tapar el botón hamburguesa */
+        z-index: 1000;                 /* Prioridad sobre otros elementos */
     }
 
     /* Mostrar el botón hamburguesa */
     .menu-icon {
-        display: block;
+        display: block;               /* Visible en móvil */
     }
 
     /* Mostrar nav si el checkbox está marcado */
     #toggle-menu:checked + .menu-icon + nav {
-    display: block;
+    display: block;                   /* Se muestra al activar el checkbox */
     }
 
     nav ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem 0;
+    flex-direction: column;         /* Uno debajo del otro */
+    align-items: center;            /* Lineamiento de los elementos */
+    width: 70%;                     /* Tamaño de los elementos */
+    gap: 0.5rem;                    /* Espacio entre elementos */
+    margin: 0 auto 0 auto;          /* Margenes internos */
+    padding: 0 auto;                /* Espaciado interno */
     }
 
     nav ul li {
@@ -255,7 +255,7 @@ footer{
         width: 100%;
         color: white;
         text-decoration: none;
-        background-color: #333; /* Contraste para los enlaces */
+        background-color: #333;     /* Contraste para los enlaces */
         border-bottom: 1px solid #444;
         transition: background-color 0.3s;
     }
@@ -264,7 +264,7 @@ footer{
     /* resto del responsive */
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);  /* Dos columnas */
         gap: 1rem;
         padding: 1rem;
     }
@@ -288,13 +288,13 @@ footer{
 
 
     footer .RRSS {
-        text-align: center; /* centra horizontalmente si es necesario */
-        padding: 1.5rem 0;   /* espacio arriba y abajo del contenedor */
+        text-align: center;     /* Centrado horizontal */
+    padding: 1.5rem 0;          /* Espacio vertical */
     }
 
     footer .RRSS a{
         display: inline-block;
-        margin: 0.5rem 1rem;  /* separación vertical y horizontal entre elementos */
+        margin: 0.5rem 1rem;    /* Separación vertical y horizontal entre elementos */
         text-decoration: none;
     }
 
@@ -303,14 +303,6 @@ footer{
 
 @media (min-width: 900px) {
     .grid-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);  /* 3 columnas en pantallas grandes */
     }
 }
-
-
-
-
-
-
-
-

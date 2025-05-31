@@ -3,21 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="02_Style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="02_Style.css"> <!--Enlaza al css externo-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--Enlaza librería de iconos-->
+        <title>Mi página</title> <!--Titulo que aparece en la pestaña del navegador-->
 
-        <title>Mi página</title>
         <!--Importación fuente Montserrat-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
     </head>
 
     <body>
         <header id="Encabezado" class="Fondo">
+            <!--Icono menú hamburguesa para modelo responsivo asociado al checkbox-->
             <input type="checkbox" id="toggle-menu" />
             <label for="toggle-menu" class="menu-icon">&#9776;</label>
+
             <!-- Navegación -->
             <nav id="navegacion">
                 <div>
@@ -31,7 +32,7 @@
                     </ul>
                 </div>
             </nav>
-
+            <!--Foto y texto del perfil-->
             <div id="Perfil">
                 <img src="https://i.pinimg.com/736x/2d/ef/8d/2def8df633cb49214b7f5fa15233e40b.jpg" alt="Foto de perfil"/>
                 <div>
@@ -43,6 +44,7 @@
 
         <!-- Contenido Principal -->
         <main id="Informacion">
+
             <!-- Sección Sobre Mí -->
             <section id="SobreMi">
                 <div class="container">
@@ -155,10 +157,8 @@
                     </div>
                 </div>
             </section>
-
         </main>
-        </div>
-    
+        
         <!-- Pie de página -->
         <footer>
             <div class="container-footer">
@@ -171,8 +171,6 @@
                 <h6>&copy; 2025 Mi Sitio Web</h6>
             </div>
         </footer>
-
     </body>
-
 </html>
 
