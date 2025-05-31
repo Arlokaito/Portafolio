@@ -187,10 +187,15 @@ a {
 }
 
 /* Pie */
-footer #container{
-    display: flex;
-    justify-content: center;
+footer{
+    text-align: center;
     gap: 1.5rem;
+    padding-bottom: 0;
+}
+
+.container-footer{
+        background-color: #333333;
+        padding-bottom: 5px;
 }
 
 .RRSS a {
@@ -281,25 +286,6 @@ footer #container{
     object-fit: contain;
     }
 
-/*
-    nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0;
-    list-style: none;
-    margin: 0;
-    }
-
-    nav ul li a {
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    background-color: #444;
-    color: #fff;
-    border-radius: 6px;
-    }
-*/
 
     footer .RRSS {
         text-align: center; /* centra horizontalmente si es necesario */
