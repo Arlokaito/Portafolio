@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es"> <!--Lenguaje de la página español-->
+    <head> <!--Espacio donde se ingresan los metadatos y no son visibles en pantalla -->
+        <meta charset="UTF-8"> <!--Caracteres permitidos-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="style.css"> <!--referencia al archivo css para aplicar estilos-->
+    </head>
+    <body> <!--Espacio visible del sitio el cual puede contener el main, header, footer, aside, etc-->
+
+        <header> <!--Encabezado con container para ordenar elementos en parte superior de la pantalla-->
+            <div class="container"> <!--Espacio que utilizará el encabezado-->
+                <h1>¡Bienvenido a nuestra página!</h1> <!--Titulo principal-->
+                <p>Sitio web de muestra para una empresa ficticia</p> <!--parrafo-->
+                <a href="#features" class="btn">Ver características</a> <!--Boton que lleva a la sección de caracteristicas-->
+            </div>
+        </header>
+
+        <section id="features"> <!--Sección de características-->
+            <div class="container"> <!--Espacio que utilizarán las características-->
+                <h2>Características principales</h2>
+                <div class="feature">   <!--Característica 1-->
+                    <h3>Facilidad de uso</h3>
+                    <p>Nuestra plataforma es fácil de usar para cualquier persona, sin importar su experiencia.</p>
+                </div>
+                <div class="feature">   <!--Característica 2-->
+                    <h3>Diseño moderno</h3>
+                    <p>Nuestro diseño está actualizado con las últimas tendencias para brindar la mejor experiencia al usuario.</p>
+                </div>
+                <div class="feature">   <!--Característica 3-->
+                    <h3>Soporte 24/7</h3>
+                    <p>Ofrecemos soporte técnico las 24 horas del día, los 7 días de la semana, para ayudarte en cualquier momento.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials"> <!--Seccion de testimonios -->
+            <div class="container"> <!--Espacio que utilizarán los testimonios-->
+                <h2>Testimonios</h2>
+                <div class="testimonial"> <!--Testimonio 1-->
+                    <p>"¡Increíble servicio! ¡Gracias por hacer mi vida más fácil!"</p>
+                    <cite>- Cliente feliz</cite> <!--Citado de texto-->
+                </div>
+                <div class="testimonial"> <!--Testimonio 2-->
+                    <p>"Nunca pensé que encontraría una solución tan genial. ¡Recomendado al 100%!"</p>
+                    <cite>- Otro cliente satisfecho</cite> <!--Citado de texto-->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact"> <!--Sección de contacto-->
+            <div class="container"> <!--Espacio de contacto-->
+                <h2>Contacto</h2>
+                <form action="#" method="post"> <!--Etiqueta para aplicar elementos de formulario-->
+                    <input type="text" name="name" placeholder="Nombre" required> <!--Campo input para ingresar datos tipo texto, input obligatorio si se quiere enviar información-->
+                    <input type="email" name="email" placeholder="Correo electrónico" required> <!--Campo input para ingresar datos tipo email (requiere un caracter especial @), input obligatorio si se quiere enviar información-->
+                    <textarea name="message" placeholder="Mensaje" required></textarea> <!--Campo input para ingresar datos tipo texto, input obligatorio si se quiere enviar información-->
+                    <button type="submit" class="btn">Enviar mensaje</button> <!--Boton para enviar los datos de los inputs anteriores-->
+                </form>
+            </div>
+        </section>
+
+        <footer> <!--Pie de página-->
+            <div class="container">
+                <p>&copy; 2025 Compañía XYZ. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente del texto como Arial, con una fuente de respaldo sans-serif */
+    margin: 0;                      /* Elimina el margen exterior por defecto del body */
+    padding: 0;                     /* Elimina el espacio interior por defecto del body */
+}
+
+.container {
+    width: 80%;                     /* Define el ancho del contenedor en */
+    margin: 0 auto;                 /* Centra el contenedor horizontalmente */
+    padding: 20px 0;                /* Aplica un espacio interno de 20px arriba y abajo */
+}
+
+header {
+    background-color: #333;       /* Establece el color de fondo del encabezado en gris oscuro */
+    color: #fff;                  /* Establece el color del texto en blanco */
+    text-align: center;             /* Centra el texto horizontalmente */
+    padding: 100px 0;               /* Aplica 100px de relleno interno arriba y abajo */
+}
+
+header h1 {
+    font-size: 2.5em;               /* Establece el tamaño de fuente del título del header a 2.5 veces el tamaño base */
+}
+
+.btn {
+    display: inline-block;          /* Permite que el botón se comporte como bloque en línea */
+    background-color: #007bff;    /* Color de fondo azul para el botón */
+    color: #fff;                  /* Color de texto blanco */
+    padding: 10px 20px;             /* Aplica 10px de relleno interno vertical y 20px horizontal */
+    text-decoration: none;          /* Elimina el subrayado del enlace */
+    border-radius: 5px;             /* Aplica esquinas redondeadas al botón */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.btn:hover {
+    background-color: #0056b3;    /* Cambia el color de fondo cuando se pasa el mouse sobre el botón */
+}
+
+section {
+    padding: 50px 0;                /* Aplica 50px de relleno interno arriba y abajo a las secciones */
+}
+
+h2 {
+    text-align: center;             /* Centra horizontalmente los títulos de segundo nivel */
+}
+
+.feature {
+    text-align: center;             /* Centra el contenido de la característica */
+    margin-bottom: 30px;            /* Agrega un margen inferior de 30px */
+}
+
+.feature h3 {
+    font-size: 1.5em;               /* Establece el tamaño de fuente del título de la característica */
+}
+
+.testimonial {
+    background-color: #f9f9f9;    /* Establece un fondo gris muy claro */
+    padding: 20px;                  /* Aplica 20px de relleno en todos los lados */
+    border-radius: 5px;             /* Aplica esquinas redondeadas */
+    margin-bottom: 30px;            /* Agrega un margen inferior de 30px */
+}
+
+.testimonial p {
+    font-style: italic;             /* Aplica estilo en cursiva al texto del testimonio */
+}
+
+.testimonial cite {
+    font-weight: bold;              /* Aplica negrita a la cita del autor del testimonio */
+}
+
+form {
+    max-width: 600px;               /* Establece un ancho máximo de 600px para el formulario */
+    margin: 0 auto;                 /* Centra el formulario horizontalmente */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;                    /* Ocupa el 100% del ancho del contenedor */
+    padding: 10px;                  /* Aplica 10px de relleno interno */
+    margin-bottom: 20px;            /* Aplica un margen inferior de 20px */
+    border-radius: 5px;             /* Aplica esquinas redondeadas */
+    border: 1px solid #ccc;       /* Aplica borde gris claro */
+}
+
+button[type="submit"] {
+    background-color: #007bff;      /* Color de fondo azul */
+    color: #fff;                    /* Color de texto blanco */
+    border: none;                     /* Elimina el borde */
+    padding: 10px 20px;               /* Aplica 10px de relleno interno vertical y 20px horizontal */
+    border-radius: 5px;               /* Aplica esquinas redondeadas */
+    cursor: pointer;                  /* Cambia el cursor al pasar por encima para indicar que es clickeable */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;      /* Cambia el color de fondo al pasar el mouse */
+}
+
+footer {
+    background-color: #333;         /* Establece el fondo del pie de página en gris oscuro */
+    color: #fff;                    /* Establece el color del texto en blanco */
+    text-align: center;               /* Centra el texto */
+    padding: 20px 0;                  /* Aplica 20px de relleno arriba y abajo */
+}
