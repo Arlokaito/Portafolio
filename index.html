@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="02_Style.css"> <!--Enlaza al css externo-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--Enlaza librería de iconos-->
+        
         <title>Mi página</title> <!--Titulo que aparece en la pestaña del navegador-->
 
         <!--Importación fuente Montserrat-->
@@ -14,6 +15,7 @@
     </head>
 
     <body>
+        
         <header id="Encabezado" class="Fondo">
             <!--Icono menú hamburguesa para modelo responsivo asociado al checkbox-->
             <input type="checkbox" id="toggle-menu" />
@@ -29,6 +31,7 @@
                         <li><a href="#Educación">Educación</a></li>
                         <li><a href="#Conocimientos">Conocimientos</a></li>
                         <li><a href="#Portafolio">Portafolio</a></li>
+                        <li><button id="abrirFormulario">Contacto</button></li>
                     </ul>
                 </div>
             </nav>
@@ -157,6 +160,39 @@
                     </div>
                 </div>
             </section>
+
+            <div id="formularioPop" class="Pop">
+                <div class="Pop-contenido">
+                    <span class="cerrar">&times;</span>
+                    <form id="miFormulario">
+                        <h2>Contacto</h2>
+                        <fieldset >
+                            <label for="nombre">Ingresa tu nombre: <input id="nombre" name="nombre" type="text" /></label>
+                            <label for="email">Ingresa tu Email: <input id="email" name="email" type="email" placeholder="ejemplo@ejemplo.com"/></label>
+                            <label for="telefono">Ingresa tu teléfono: <input id="telefono" name="telefono" type="tel" placeholder="+569 xxxx xxxxx"/></label>
+                            
+                        </fieldset>
+                        <fieldset>
+                            <legend>Tipo de contacto(requerido).</legend>
+                            <div class="radio-inline">
+                                <label for="personal"><input id="personal" type="radio" name="tipo-cuenta" class="Fcontacto inline" checked /> Personal.</label>
+                                <label for="negocio"><input id="negocio" type="radio" name="tipo-cuenta" class="Fcontacto inline" /> Negocio.</label>
+                            </div>
+                        </fieldset>
+                        <label for="mensaje">Mensaje:
+                            <textarea id="mensaje" name="mensaje" rows="5" cols="30" placeholder="Me gustaría ver la posibilidad de..."></textarea>
+                        </label>
+                        <label for="terminos-y-condiciones">
+                            <input class="Fcontacto" id="terminos-y-condiciones" type="checkbox" required name="terminos-y-condiciones" /> Acepto los <a href="">terminos y condiciones</a>
+                        </label>
+                        <div class="centrar-boton">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                    <div id="errores" style="color: red; margin-top: 1rem;"></div>
+                </div>
+            </div>    
+
         </main>
         
         <!-- Pie de página -->
@@ -171,6 +207,8 @@
                 <h6>&copy; 2025 Mi Sitio Web</h6>
             </div>
         </footer>
+    
+    <script src="formularioPop.js"></script> <!--Enlaza con el formulario Pop-->
     </body>
 </html>
 
