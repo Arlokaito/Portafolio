@@ -33,6 +33,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// Funcionalidad para animar la apertura del menú //
+document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("toggle-menu");
+    const menu = document.querySelector("nav");
+
+    toggle.addEventListener("change", () => {
+        if (toggle.checked) {
+            menu.style.maxHeight = menu.scrollHeight + "px";
+            menu.style.opacity = "1";
+        } else {
+            menu.style.maxHeight = "0px";
+            menu.style.opacity = "0";
+        }
+    });
+});
+
+
 
 
 // ----------- Validaciones -----------
