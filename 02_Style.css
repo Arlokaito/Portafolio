@@ -353,6 +353,13 @@ input, textarea {
         transition: background-color 0.3s;
     }
 
+    nav { /*animación para menu */
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.2s ease, opacity 0.4s ease;
+    }
+
     /* responsive perfil */
     #Perfil {
         flex-direction: column; /* apila imagen y texto */
